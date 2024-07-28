@@ -1,0 +1,223 @@
+@import 'base/colors';
+@import 'layout/footer';
+@import 'helpers/variables';
+@import 'base/grid';
+@import 'components/ui';
+@import 'layout/nav';
+@import 'reset';
+@import 'base/typography';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $color-neu-500;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: clip;
+  padding: 0;
+
+  h6 {
+    color: $color-prime-400;
+  }
+
+  h2, p {
+    color: $color-neu-200;
+  }
+}
+
+// basic building section setup
+
+section {
+  // min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  overflow: clip;
+}
+
+// page loader 
+
+.c-page--load {
+  align-items: center;
+  animation: heroLoad 1s cubic-bezier(.59,0,.13,1) 1.75s 1 forwards;
+  background: $color-neu-200;
+  display: grid;
+  height: 100vh;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  z-index: 1000;
+
+  h3 {
+    animation: heroFadeIn 1s cubic-bezier(.59,0,.13,1) 1 forwards;
+    color: $color-neu-500;
+    opacity: 0;
+  }
+}
+
+@keyframes heroLoad {
+  from {translate: 0 0;}
+  to {translate: 0 -150%;}
+}
+
+@keyframes heroGrow {
+  from {height: 0%; width: 0%;}
+  to {height: 100%; width: 100%;}
+}
+
+@keyframes heroFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+// project hero
+.c-project {
+  grid-template-rows: repeat(5, auto);
+  gap: 2em 0;
+  padding: 4em 0 2em 0;
+
+  &__image--main {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  &__image--second {
+    grid-column: 2;
+    grid-row: 2;
+    width: calc(50% - 1em);
+  }
+
+  &__image--third {
+    grid-column: 2;
+    grid-row: 2;
+    place-self: start end;
+    width: calc(50% - 1em);
+  }
+
+  &__title {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  &__details {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  &__description {
+    grid-column: 2;
+    grid-row: 5;
+  }
+}
+
+// project showcase
+.c-showcase {
+  grid-template-rows: auto;
+  padding: 4em 0;
+
+  &__image {
+    grid-column: 1/span 3;
+
+    video {
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (min-width: $tablet) {
+
+// project hero
+  .c-project {
+    grid-template-rows: repeat(3, auto);
+    gap: 2em;
+
+    &__image--main{
+      grid-column: 2/span 3;
+      grid-row: 2;
+      width: fit-content;
+    }
+
+    &__image--second {
+      grid-column: 5/span 2;
+      grid-row: 2;
+      width: 100%;
+    }
+
+    &__image--third {
+      grid-column: 5/span 2;
+      grid-row: 2;
+      place-self: end start;
+      width: 50%;
+    }
+
+    &__title {
+      grid-column: 2/span 4;
+      grid-row: 1;
+    }
+    &__details {
+      grid-column: 2/span 2;
+      grid-row: 3;
+      text-align: right;
+    }
+    &__description {
+      grid-column: 4/span 3;
+      grid-row: 3;
+    }
+  }
+
+  .c-showcase {
+    padding: 6em 0;
+  
+    &__image {
+      grid-column: 2/span 5;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  // project hero
+  .c-project {
+    gap: 2em;
+    padding: 2em 0 6em 0;
+
+    &__image--main{
+      grid-column: 3/span 2;
+      grid-row: 2;
+      place-self: start end;
+    }
+
+    &__image--second {
+      grid-column: 5/span 2;
+      grid-row: 2;
+      place-self: start;
+      width: 72%;
+    }
+
+    &__image--third {
+      grid-column: 5/span 2;
+      grid-row: 2;
+      place-self: start end;
+      width: calc(25% - 1em);
+    }
+
+    &__title {
+      color: $color-neu-200;
+      grid-column: 3/span 4;
+      grid-row: 1;
+
+      h3 {
+        color: $color-neu-200;
+      }
+    }
+    &__details {
+      grid-column: 2;
+      grid-row: 2;
+      text-align: right;
+    }
+    &__description {
+      grid-column: 3/span 3;
+      grid-row: 3;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="styles/projects.css")
+    title Jake Miller [Work]
+  body
+    .c-page--load
+        h3.js-loader-logo(data-value="Motives")
+    include blocks/nav
+    section.c-project.o-grid.js-bgc--dk
+      .c-project__title
+            h2 Motives Precisely Eyeliner
+      .c-project__image--main
+          video(src="/assets/motives-mobile-1.mp4", alt="", loading="lazy", autoplay='' loop='' muted='' plays-inline='')
+      .c-project__image--second
+          img(src="/assets/motives-mobile-2.jpg", alt="", loading="lazy")
+      .c-project__image--third
+          img(src="/assets/motives-image-3.jpg", alt="", loading="lazy")
+      .c-project__details
+        h6 Brand
+        p Motives Cosmetics
+        h6 Project Description 
+        p Product marketing page for Motives Cosmetics on SHOP•COM that sends buyers directly into a purchasing funnel. 
+        h6 Role 
+        p Concept designs, UX, animations, development
+      .c-project__description
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet.
+    section.c-showcase.o-grid.js-bgc--lt
+      .c-showcase__image
+          video(src="/assets/motives-project-page.mp4", alt="", autoplay='' loop='' muted='' plays-inline='')
+    include blocks/footer
+  script(src="scripts/work.js")

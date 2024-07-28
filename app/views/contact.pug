@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="styles/style.css")
+    link(rel="stylesheet", href="styles/nav.css")
+    link(rel="stylesheet", href="styles/contact.css")
+    title Jake Miller [About]
+  body
+    .c-page--load
+        h3.js-loader-logo(data-value="CONTACT")
+    include blocks/nav
+    section.c-contact.o-grid
+      .c-contact__headline
+        h1 Let's Do it.
+        h1 Let's Talk.
+      .c-contact__socials
+          a(href="" alt="CodePen link")
+            img.social(src="/assets/codepen-blue.svg", alt="")
+          a(href="" alt="LinkedIn link")
+            img.social(src="/assets/linkedin-blue.svg", alt="")
+      h4 I really would like to hear from you.
+      .c-contact__links
+        a(href="#")
+          h5.js-text-link.js-hover-address(data-value="hello@emailaddress.com") hello@emailaddress.com
+        a(href="#")
+          .c-contact__links--mailto.js-mailto
+            button.btn-icon &#9993;
+      .c-contact__copyright
+        p ©Jake Miller
+    script(src="scripts/contact.js")
+    script(src="scripts/scripts.js")

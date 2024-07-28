@@ -1,0 +1,130 @@
+@import "../base/colors";
+@import '../helpers/variables';
+@import '../base/typography';
+
+footer {
+  background: $color-neu-500;
+  grid-template-rows: repeat(4, 1fr) .5fr;
+  height: 100dvh;
+
+  h2, li, p {
+    color: $color-neu-200;
+  }
+  h2 {
+    font-size: 17.25dvw;
+    margin: 0 0 .25em 0;
+  }
+
+  &__talk {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  &__links {
+    border-top: 1px solid $color-neu-200;
+    display: flex;
+    gap: 2em;
+    grid-column: 2;
+    grid-row: 3;
+    margin: 2em 0 0 0;
+    padding: 2em 0 0 0;
+
+    ul, li{
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 .5em 0;
+      padding: 0;
+      font-size: 1.1em;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    a {
+      color: $color-prime-400;
+    }
+
+    img {
+      margin: 0;
+      width: 2.5em;
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    inset: auto auto 0 0;
+    width: 100dvw;
+
+    p {
+      font-size: 16dvw;
+      font-weight: 900;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      text-transform: uppercase;
+      translate: -2dvw 2dvw;
+      white-space: nowrap
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+    -footer {
+      h2 {
+        font-size: 10dvw;
+      }
+    
+      &__talk {
+        grid-column: 2/span 5;
+        grid-row: 2;
+      }
+    
+      &__links {
+        grid-column: 2/span 2;
+        grid-row: 3/span 2;
+        gap: 6dvw;
+    
+        img {
+          width: 5dvw;
+          margin: 0 0 1em 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (orientation: landscape) {
+    -footer {
+      h2 {
+        font-size: 7dvw;
+      }
+    
+      &__talk {
+        grid-column: 2/span 5;
+        grid-row: 2;
+
+      }
+    
+      &__links {
+        grid-column: 5/span 2;
+        grid-row: 3;
+        gap: 3dvw;
+        justify-content: space-between;
+        margin: 0;
+
+        // ul, li, a {
+        //   flex-direction: row;
+        // }
+
+        ul, li {
+          font-size: 1.1em;
+          flex-direction: row;
+          margin: 0 1em 0 0;
+        }
+    
+        img {
+          width: 2em;
+        }
+      }
+    }
+    }

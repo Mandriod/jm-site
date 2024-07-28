@@ -1,0 +1,192 @@
+@import 'base/colors';
+@import 'layout/footer';
+@import 'helpers/variables';
+@import 'base/grid';
+@import 'components/ui';
+@import 'layout/nav';
+@import 'reset';
+@import 'base/typography';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $color-neu-500;
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: clip;
+  padding: 0;
+}
+
+// basic building section setup
+
+section {
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  overflow: clip;
+  padding: 6em 0;
+}
+
+
+// page loader 
+
+.c-page--load {
+  align-items: center;
+  animation: heroLoad 1s cubic-bezier(.59,0,.13,1) 1.75s 1 forwards;
+  background: $color-neu-200;
+  display: grid;
+  height: 100vh;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  z-index: 1000;
+
+  h3 {
+    animation: heroFadeIn 1s cubic-bezier(.59,0,.13,1) 1 forwards;
+    color: $color-neu-500;
+    opacity: 0;
+  }
+}
+
+@keyframes heroLoad {
+  from {translate: 0 0;}
+  to {translate: 0 -150%;}
+}
+
+@keyframes heroGrow {
+  from {height: 0%; width: 0%;}
+  to {height: 100%; width: 100%;}
+}
+
+@keyframes heroFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.c-intro {
+  color: $color-neu-200;
+  grid-template-rows: repeat(4, auto);
+  padding: 0 0 6em 0;
+  
+  h2, p {
+    color: $color-neu-200;
+  }
+  
+  &__image {
+    grid-column: 2;
+    grid-row: 2;
+    width: fit-content;
+    place-self: end;
+  }
+
+  &__description {
+    grid-column: 2;
+    grid-row: 4;
+
+    h2 {
+      margin: 0 0 1em 0;
+    }
+
+    p {
+      border-top: 1px solid $color-neu-200;
+      padding: 1em 0 0 0;
+    }
+  }
+}
+
+.c-about {
+  background: $color-neu-200 url("/assets/icon-lg-outline.svg") no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 45%;
+  background-size: 50%;
+  grid-template-rows: auto auto;
+
+  &__opener {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0 0 1em 0;
+    place-self: start end;
+
+    h4 {
+      text-wrap: balance;
+      width: 14vw;
+      line-height: 1;
+    }
+  }
+
+  &__copy {
+    grid-column: 2;
+    grid-row: 2;
+
+    p {
+      margin: 0 0 1em 0;
+    }
+
+    p:last-of-type {
+      border-bottom: 1px solid $color-neu-500;
+      padding: 0 0 1em 0;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .c-intro {
+    grid-template-rows: repeat(12, 1fr);
+    
+    &__image {
+      grid-column: 3/span 4;
+      grid-row: 2/span 6;
+      place-self: start;
+    }
+
+    &__description {
+      grid-column: 3/span 3;
+      grid-row: 10/span 2;
+      place-self: end start;
+    }
+  }
+
+  .c-about {
+    column-gap: 2em;
+
+    &__opener {
+      grid-column: 3;
+      text-align: right;
+    }
+
+    &__copy {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 2em;
+      grid-column: 4/span 3;
+      grid-row: 1;
+      height: fit-content;
+
+      p {
+        flex: 1 4 40%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .c-intro {
+    column-gap: 2em;
+
+    &__image {
+      grid-column: 4/span 3;
+      grid-row: 2/span 9;
+      place-self: end;
+    }
+
+    &__description {
+      grid-column: 2/span 2;
+      grid-row: 6/span 5;
+      padding: 0 25% 0 0;
+      place-self: end start;
+    }
+  }
+}

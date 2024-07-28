@@ -1,0 +1,253 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="styles/work.css")
+    title Jake Miller [Work]
+  body
+    .c-page--load
+        h3.js-loader-logo(data-value="WORK")
+    include blocks/nav
+    section.c-work.o-grid.js-bgc--dk
+      .js-img-blur.c-work__image(style="background: url('/assets/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
+          img.js-image.js-work-hero(src="/assets/work-project.jpg", alt="", loading="lazy")
+          img.js-image.js-work-hero.js-hide(src="/assets/work-codepen.jpg", alt="", loading="lazy")
+      .c-work__links
+            h2
+              a.js-text-link.js-work-hover(href="#projects", data-value="Projects") Projects 
+              sup  [
+                span.js-project-total 06
+                | ]
+            h2
+              a.js-text-link.js-work-hover(href="#labs" , data-value="Experiments") Experiments
+              sup  [
+                span.js-experiments-total 03
+                | ]
+      .c-work__description
+        p Explore dynamic interfaces, innovative techniques, and experiences for various products and countries that push the boundaries of web development.
+    section#projects.c-projects.o-grid.js-bgc--lt
+      .c-work__text--header
+          //- h6.o-section__title.o-section__title--blue What
+          //-     sup  [01]
+          h2 Projects
+          .c-work__body--legend
+            .c-work__body--lang
+              p.o-disclaimer 
+                b Languages 
+              p.o-disclaimer English, French, Malay, Simplified Chinese, Traditional Chinese
+              ul.o-disclaimer 
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="English") Eng
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="French") Fre
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Malay") Msa
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Simplified Chinese") SChi
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Traditional Chinese") TChi
+            .c-work__body--types
+              p.o-disclaimer 
+                b Types of work
+              p.o-disclaimer Design, UI/UX, Development
+              ul.o-disclaimer 
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Design") &Dopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="UI/UX") &Xopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Development") &Vopf;
+      .o-project
+        .o-project__image.js-img-blur(style="background: url('/assets/ix-opc3-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image.js-hover-image(src="/assets/ix-opc3.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide.js-project-vid(src="/assets/work-ix-preview.mp4" loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-work__legend
+            .o-work__legend--lang
+              ul.o-disclaimer 
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="English") Eng
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="French") Fre
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="Malay") Msa
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Simplified Chinese") SChi
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Traditional Chinese") TChi
+            .o-work__legend--types
+              ul.o-disclaimer 
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Design") &Dopf;
+                //- li.o-disclaimer 
+                //-   .o-tooltip(data-tooltip="UI/UX") &Xopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Development") &Vopf;
+        .o-project__copy
+          .o-project__copy--text
+            h3.js-project-number /01
+            p 
+              b Isotonix
+          a(href="" alt="Browse more work link")
+          button.btn-secondary View More
+      .o-project
+        .o-project__image.js-img-blur(style="background: url('/assets/sa-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image.js-hover-image(src="/assets/sa.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide.js-project-vid(src="/assets/sa.mp4" loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-work__legend
+            .o-work__legend--lang
+              ul.o-disclaimer 
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="English") Eng
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="French") Fre
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="Malay") Msa
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Simplified Chinese") SChi
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="Traditional Chinese") TChi
+            .o-work__legend--types
+              ul.o-disclaimer 
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Design") &Dopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="UI/UX") &Xopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Development") &Vopf;
+        .o-project__copy
+          .o-project__copy--text
+            h3.js-project-number
+            p 
+              b Shopping Annuity Brand
+          a(href="" alt="Browse more work link")
+          button.btn-secondary View More
+      .o-project
+        .o-project__image.js-img-blur(style="background: url('/assets/layered-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image.js-hover-image(src="/assets/layered.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide.js-project-vid(src="/assets/layered.mp4" loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-work__legend
+            .o-work__legend--lang
+              ul.o-disclaimer 
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="English") Eng
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="French") Fre
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="Malay") Msa
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="Simplified Chinese") SChi
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="Traditional Chinese") TChi
+            .o-work__legend--types
+              ul.o-disclaimer 
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Design") &Dopf;
+                //- li.o-disclaimer 
+                //-   .o-tooltip(data-tooltip="UI/UX") &Xopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Development") &Vopf;
+        .o-project__copy
+          .o-project__copy--text
+            h3.js-project-number
+            p
+              b Layered
+          a(href="" alt="Browse more work link")
+          button.btn-secondary View More
+      .o-project
+        .o-project__image.js-img-blur(style="background: url('/assets/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
+          img.js-image.js-hover-image(src="/assets/ldv-eye.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide.js-project-vid(src="/assets/ldv-eye.mp4" loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-work__legend
+            .o-work__legend--lang
+              ul.o-disclaimer 
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="English") Eng
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="French") Fre
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="Malay") Msa
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Simplified Chinese") SChi
+                //- li.o-disclaimer
+                //-   .o-tooltip(data-tooltip="Traditional Chinese") TChi
+            .o-work__legend--types
+              ul.o-disclaimer 
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Design") &Dopf;
+                //- li.o-disclaimer 
+                //-   .o-tooltip(data-tooltip="UI/UX") &Xopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Development") &Vopf;
+        .o-project__copy
+          .o-project__copy--text
+            h3.js-project-number
+            p Lumière de Vie
+          a(href="" alt="Browse more work link")
+          button.btn-secondary View More
+      //- .o-project
+      //-   .o-project__image.js-img-blur(style="background: url('/assets/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
+      //-     img.js-image.js-hover-image(src="/assets/placeholder-3-min-2.jpg", alt="", loading="lazy")
+      //-   .o-work__legend
+      //-       .o-work__legend--lang
+      //-         ul.o-disclaimer 
+      //-           li.o-disclaimer
+      //-             .o-tooltip(data-tooltip="English") Eng
+      //-           //- li.o-disclaimer
+      //-           //-   .o-tooltip(data-tooltip="French") Fre
+      //-           //- li.o-disclaimer
+      //-           //-   .o-tooltip(data-tooltip="Malay") Msa
+      //-           //- li.o-disclaimer
+      //-           //-   .o-tooltip(data-tooltip="Simplified Chinese") SChi
+      //-           //- li.o-disclaimer
+      //-           //-   .o-tooltip(data-tooltip="Traditional Chinese") TChi
+      //-       .o-work__legend--types
+      //-         ul.o-disclaimer 
+      //-           li.o-disclaimer 
+      //-             .o-tooltip(data-tooltip="Design") &Dopf;
+      //-           //- li.o-disclaimer 
+      //-           //-   .o-tooltip(data-tooltip="UI/UX") &Xopf;
+      //-           li.o-disclaimer 
+      //-             .o-tooltip(data-tooltip="Development") &Vopf;
+      //-   .o-project__copy
+      //-     .o-project__copy--text
+      //-       h3.js-project-number
+      //-       p 
+      //-         b Market America - UnFranchise
+      //-     a(href="" alt="Browse more work link")
+      //-     button.btn-secondary View More
+    section#labs.c-labs.o-grid.js-bgc--dk
+      .c-labs__text--header
+          h2 Experiments
+      .o-lab
+        a.o-lab__image.js-img-blur(href="https://codepen.io/sc1re/pen/poVXBwG?editors=1100", style="background: url('/assets/codepen-fire-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image.js-hover-image(src="/assets/codepen-fire.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide(src="/assets/codepen-fire.mp4", alt="", loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-lab__copy
+          .o-lab__copy--text
+            h3.js-lab-number
+            p CSS and SVG filter fireball
+          a(href="https://codepen.io/sc1re/pen/poVXBwG?editors=1100")
+            img.social(src="/assets/codepen-blue.svg", alt="")
+      .o-lab
+        a.o-lab__image.js-img-blur(href="https://codepen.io/sc1re/pen/yLjLvbp?editors=0100" style="background: url('/assets/codepen-eth-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image.js-hover-image(src="/assets/codepen-eth.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide(src="/assets/codepen-eth.mp4", alt="", loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-lab__copy
+          .o-lab__copy--text
+            h3.js-lab-number
+            p CSS only Ethereum animation (pre-trig properties)
+          a(href="https://codepen.io/sc1re/pen/yLjLvbp?editors=0100")
+            img.social(src="/assets/codepen-blue.svg", alt="")
+      .o-lab
+        a.o-lab__image.js-img-blur(href="https://codepen.io/sc1re/pen/NWLQOpK?editors=0010", style="background: url('/assets/codepen-coin-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image.js-hover-image(src="/assets/codepen-coin.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide(src="/assets/codepen-coin.mp4", alt="", loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-lab__copy
+          .o-lab__copy--text
+            h3.js-lab-number
+            p CSS and JS coin flip.
+          a(href="https://codepen.io/sc1re/pen/NWLQOpK?editors=0010")
+            img.social(src="/assets/codepen-blue.svg", alt="")
+    include blocks/footer
+  script(src="scripts/work.js")

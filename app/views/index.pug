@@ -1,0 +1,221 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="styles/styles.css")
+    title Jake Miller [Home]
+  body
+    .c-page--load
+        h3.js-loader-logo(data-value="J∆KE")
+    include blocks/nav
+    section.js-hero.c-hero.o-grid.js-bgc--dk
+      .c-hero__video
+        video.js-hero--video.o-hero--video(autoplay='' loop='' muted='' plays-inline='')
+          source(src="images/hero-logo.mp4" loading="lazy")
+      .js-hero__intro.c-hero__intro
+        h1.js-hero-headlineA(data-value="I’m Built")
+        h1.js-hero-headlineB(data-value="to Create;")
+        h1.js-hero-headlineC(data-value="I create ")
+        h1.js-hero-headlineD(data-value="to Build.")
+        h5 Design, UI/UX, Frontend Development
+        a(href="contact.html")
+          button.btn-prime Let's Talk
+    section.js-work.c-work.o-grid.js-bgc--lt
+      .c-work__text
+        .c-work__text--header
+          h6.o-section__title.o-section__title--blue What
+              sup  [01]
+          h2 Selected Work
+        .c-work__body
+          .c-work__body--copy
+            h5 Around the world with different cultures and languages.
+            p Highlights of projects and cases that were designed and built to reach clients from around the world. 
+          .c-work__body--legend
+            .c-work__body--lang
+              p.o-disclaimer 
+                b Languages 
+              p.o-disclaimer English, French, Malay, Simplified Chinese, Traditional Chinese
+              ul.o-disclaimer 
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="English") Eng
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="French") Fre
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Malay") Msa
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Simplified Chinese") SChi
+                li.o-disclaimer
+                  .o-tooltip(data-tooltip="Traditional Chinese") TChi
+            .c-work__body--types
+              p.o-disclaimer 
+                b Types of work
+              p.o-disclaimer Design, UI/UX, Development
+              ul.o-disclaimer 
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Design") &Dopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="UI/UX") &Xopf;
+                li.o-disclaimer 
+                  .o-tooltip(data-tooltip="Development") &Vopf;
+      .c-work__indicator--one.js-parallax-plaid
+      .c-work__img.c-work__img--one
+        a.js-img-blur.o-image--stack(style="background: url('images/motives-eyeliner-in-sm.jpg') no-repeat; background-size: cover;" href="motives-precisely-eyeliner.html")
+          img.js-image.js-hover-image(src="images/motives-eyeliner-in.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide.js-project-vid(src="images/motives-eyeliner-home.mp4" loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-work__legend
+          .o-work__legend--lang
+            ul.o-disclaimer 
+              li.o-disclaimer
+                .o-tooltip(data-tooltip="English") Eng
+          .o-work__legend--types
+            ul.o-disclaimer 
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="Design") &Dopf;
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="UI/UX") &Xopf;
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="Development") &Vopf;
+      .c-work__copy--one.js-parallax-plaid
+        h6 Motives
+        p USA
+      .c-work__indicator--two.js-parallax-light
+      .c-work__img.c-work__img--two
+        a.js-img-blur.o-image--stack(style="background: url('images/icon-jr-sm.jpg') no-repeat; background-size: cover;" href="market-america-icon2023.html")
+          img.js-image.js-hover-image(src="images/icon-jr.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide.js-project-vid(src="images/icon-jr-home.mp4" loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-work__legend
+          .o-work__legend--lang
+            ul.o-disclaimer 
+              li.o-disclaimer
+                .o-tooltip(data-tooltip="English") Eng
+              li.o-disclaimer
+                .o-tooltip(data-tooltip="Spanish") Spa
+              li.o-disclaimer
+                .o-tooltip(data-tooltip="Traditional Chinese") TChi
+          .o-work__legend--types
+            ul.o-disclaimer 
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="Design") &Dopf;
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="UI/UX") &Xopf;
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="Development") &Vopf;
+      .c-work__copy--two.js-parallax-light
+        h6 SHOP•COM
+        p Worldwide
+      .c-work__indicator--three.js-parallax-ludicrous
+      .c-work__img.c-work__img--three
+        a.js-img-blur.o-image--stack(style="background: url('images/tls-fsk-home-sm.jpg') no-repeat; background-size: cover;" href="tls-fast-starter-kit.html")
+          img.js-image.js-hover-image(src="images/tls-fsk-home.jpg", alt="", loading="lazy")
+          video.js-image.js-hover-image.js-hide.js-project-vid(src="images/tls-home.mp4" loading="lazy" autoplay='' loop='' muted='' plays-inline='')
+        .o-work__legend
+          .o-work__legend--lang
+            ul.o-disclaimer 
+              li.o-disclaimer
+                .o-tooltip(data-tooltip="English") Eng
+          .o-work__legend--types
+            ul.o-disclaimer 
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="Design") &Dopf;
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="UI/UX") &Xopf;
+              li.o-disclaimer 
+                .o-tooltip(data-tooltip="Development") &Vopf;
+      .c-work__copy--three.js-parallax-ludicrous
+        h6 TLS
+        p USA
+      //- .c-work__indicator--four.js-parallax-rediculous
+      //- .c-work__img.c-work__img--four
+      //-   .js-img-blur(style="background: url('images/placeholder-3-sm-3.jpg') no-repeat; background-size: cover;")
+      //-     img.js-hover-image(src="images/placeholder-3-min-3.jpg", alt="", loading="lazy")
+      //-   .o-work__legend
+      //-     .o-work__legend--lang
+      //-       ul.o-disclaimer 
+      //-         li.o-disclaimer
+      //-           .o-tooltip(data-tooltip="English") Eng
+      //-         li.o-disclaimer
+      //-           .o-tooltip(data-tooltip="French") Fre
+      //-         li.o-disclaimer
+      //-           .o-tooltip(data-tooltip="Malay") Msa
+      //-         li.o-disclaimer
+      //-           .o-tooltip(data-tooltip="Simplified Chinese") SChi
+      //-         li.o-disclaimer
+      //-           .o-tooltip(data-tooltip="Traditional Chinese") TChi
+      //-     .o-work__legend--types
+      //-       ul.o-disclaimer 
+      //-         li.o-disclaimer 
+      //-           .o-tooltip(data-tooltip="Design") &Dopf;
+      //-         li.o-disclaimer 
+      //-           .o-tooltip(data-tooltip="UI/UX") &Xopf;
+      //-         li.o-disclaimer 
+      //-           .o-tooltip(data-tooltip="Development") &Vopf;
+      //- .c-work__copy--four.js-parallax-rediculous
+      //-   h6 Brand
+      //-   p Country
+      .c-work__button
+        a(href="work.html" alt="Browse more work link")
+          button.btn-secondary Browse More Work
+    canvas
+    section.c-skills.o-grid.js-bgc--dk
+      .c-skills__design--one
+        .js-img-blur(style="background: url('images/ux-home-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image(src="images/ux-home.jpg", alt="", loading="lazy")
+      .c-skills__design--title
+        h6.o-section__title--litblue How
+          sup  [02]
+        h2 Design
+      .c-skills__design--copy
+        h5 As a designer, I research and plan.  I imagine and create. I think broadly as well as granularly. 
+        //- p As much as possible, I do not allow technology to dictate the message or story of a design. Instead, I find a way to make the technology work for the design. That’s the beauty of having one foot in the creative world and the other in development. I can ask the 
+        //-   i 
+        //-     b what if&nbsp;
+        //-   |  questions in design and then write the code that answers the questions. 
+        p In my approach to design, I prioritize ensuring that technology enhances rather than dictates the message or narrative. By seamlessly integrating technology into the design process, I bridge the gap between creativity and development. This dual perspective allows me to explore the possibilities in design through "what if" inquiries and subsequently craft code that brings those concepts to life.
+        .c-design-icons
+          img.o-how-icon(src="images/icon-pencil.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-xd.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-figma.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-ai.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-ps.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-ae.svg", alt="", loading="lazy")
+      .c-skills__dev--one
+        .js-img-blur(style="background: url('images/scene-dev-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image(src="images/scene-dev.jpg", alt="", loading="lazy")
+      .c-skills__dev--two
+        .js-img-blur(style="background: url('images/scene-final-sm.jpg') no-repeat; background-size: cover;")
+          img.js-image(src="images/scene-final.jpg", alt="", loading="lazy")
+      .c-skills__dev--title
+        h2 Development
+      .c-skills__dev--copy
+        h5 One of the most rewarding aspects of merging design and development lies in the attention to detail. Whether it's optimizing code for efficiency, crafting micro interactions to enrich the narrative, or ensuring ADA compliance, every element contributes to the overall experience. Transforming a static design into a dynamic, engaging product is a particularly gratifying facet of my work.
+        p My experience in development stems from having a great understanding of frontend languages, design principles, 3D modeling and motion graphics. But more importantly, a drive to solve problems. If there is something needed for a site or design, I will do my best in coming up with a solution. 
+        .c-dev-icons
+          img.o-how-icon(src="images/icon-html.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-css.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-pug.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-sass.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-js.svg", alt="", loading="lazy")
+          img.o-how-icon(src="images/icon-blender.svg", alt="", loading="lazy")
+    section.c-about.o-grid.js-bgc--lt
+      .c-about--header
+          h6.o-section__title--blue Who
+              sup  [03]
+          h2 About Me
+      .c-about--profile
+        .js-img-blur(style="background: url('images/profile-sm.jpg') no-repeat; background-size: cover;")
+          img.js-loaded(src="images/profile.jpg", alt="", loading="lazy")
+      .c-about__opener.js-parallax-about
+        h5 In creativity, courage lies not in the birth of an idea, but in nurturing and guiding the idea towards maturity.
+      .c-about__copy
+        p Drawing upon two decades of experience, I've honed a precise set of skills across various disciplines to elevate ideas, narratives, and products to greater heights. When confronted with a compelling concept, I leverage creativity and design to evoke action and drive results.
+        p In a realm overflowing with ideas, I discover fulfillment not only in the genesis of concepts but also in the transformation of these notions into tangible realities. My passion lies in the intricate art of connecting diverse elements, navigating towards innovative solutions, and orchestrating their development. To me, there exists a clear distinction between design and creation, and the subsequent translation of these designs into functional entities that elicit tangible responses. It's this journey from inception to fruition that ignites my excitement and drives my work.
+      //- .c-about__button
+      //-   button.btn-second Let's Talk
+      .c-about__button
+        a(href="about.html" alt="Browse more work link")
+          button.btn-secondary More About
+    include blocks/footer
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+  script(src="scripts/scripts.js")

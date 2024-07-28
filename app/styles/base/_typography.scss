@@ -1,0 +1,176 @@
+@import 'colors';
+@import '../helpers/variables';
+
+// @import 'variables';
+@import url("https://use.typekit.net/rik8vfz.css");
+
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1200px;
+$prime-font: "menca", sans-serif;
+$font-size: 16px;
+
+@mixin prime-font {
+  color: $color-neu-500;
+  font-family: $prime-font;
+  font-weight: 900;
+  // text-transform: uppercase;
+}
+
+::selection {
+  background-color: $color-prime-200;
+  color: $color-neu-500;
+}
+
+h1 {
+  @include prime-font;
+
+  font-size: clamp(3.5em, 18vw, 4em);
+  line-height: .8;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include prime-font;
+
+  font-size: clamp(2.5em, 10.5vw, 3em);
+  line-height: 1;
+}
+
+h3 {
+  @include prime-font;
+
+  color: $color-neu-500;
+  font-size: 2.8em;
+}
+
+h4 {
+  @include prime-font;
+
+  font-size: clamp(1.5em, 2.5vw, 2em);
+}
+
+h5 {
+  @include prime-font;
+
+  font-size: clamp(1em, 5.25vw, 2em); //clamp(1.4, 2vw, 1.5em)
+  line-height: 1.42;
+}
+
+h6 {
+  @include prime-font;
+
+  font-size: clamp(1em, 2.5vw, 1.5em); //clamp(1.4, 2vw, 1.5em)
+}
+
+p, li {
+  color: $color-neu-500;
+  font-family: $prime-font;
+  font-size: clamp(1em, 1.05vw, 1.1em); //clamp(1em, 1.05vw, 1.5em)
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+span {
+  color: inherit;
+  font-family: $prime-font;
+}
+
+.disclaimer {
+  color: $color-neu-500;
+  font-family: $prime-font;
+  font-size: clamp(1em, 1.05vw, 1.1em); //clamp(1em, 1.05vw, 1.5em)
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+
+sup, sub {
+  // color: $color-neu-500;
+  font-size: .5em;
+}
+
+button {
+  @include prime-font;
+
+  font-size: clamp(1em, 4vw, 1.15em); //clamp(1em, 4vw, 1.25em)
+  font-weight: 600;
+}
+
+.o-disclaimer {
+  font-size: 0.625em;
+}
+
+.custom_li{
+  display:inline-block;
+}
+
+.o-bgc-lt{
+  h1, h2, h3, h4, h5, h6, p, li {
+    color: $color-neu-500;
+  }
+}
+
+nav {
+  h4, p, .disclaimer{
+    color: $color-neu-200;
+  }
+}
+
+.c-hero {
+  h1, h5 {
+    color: $color-neu-200;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+
+  h1 {
+    font-size: 11.5vw;
+  }
+
+  h5 {
+    font-size: 3vw;
+  }
+
+  button {
+    font-size: clamp(1em, 4vw, 1.1em);
+  }
+}
+
+@media screen and (orientation: landscape) {
+  h1 {
+    font-size: 7.5vw; // clamp(5em, 7.5vw, 6em)
+  }
+
+  h5 {
+    font-size: clamp(1em, 4vw, 1.15em);
+  }
+  
+  button {
+    font-size: clamp(1em, 4vw, 1.15em);
+  }
+}
+
+@media screen and (min-width: $desktop) {
+
+  h1 {
+    font-size: 7.5vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h5 {
+    font-size: 1.3vw;
+  }
+
+  h6 {
+    font-size: clamp(1em, 2.5vw, 1.35em); 
+  }
+}

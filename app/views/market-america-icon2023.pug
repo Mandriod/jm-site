@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="styles/projects.css")
+    title Jake Miller [Work]
+  body
+    .c-page--load
+        h3.js-loader-logo(data-value="PROJECT")
+    include blocks/nav
+    section.c-project.o-grid.js-bgc--dk
+      .c-project__title
+            h2 Market America ICON 2023
+      .c-project__image--main
+          img(src="/assets/icon-1.jpg", alt="", loading="lazy")
+      .c-project__image--second
+          img(src="/assets/icon-2.jpg", alt="", loading="lazy")
+      .c-project__image--third
+          img(src="/assets/icon-3.jpg", alt="", loading="lazy")
+      .c-project__details
+        h6 Brand
+        p Market America | SHOP•COM
+        h6 Project Description 
+        p International Convention promotional landing page built as part of a campaign to drive ticket sales and draw new prospects.
+        h6 Role 
+        p Design, UX, Development
+      .c-project__description
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet.
+    section.c-showcase.o-grid.js-bgc--lt
+      .c-showcase__image
+          video(src="/assets/icon-large.mp4", alt="", loading="lazy", autoplay='' loop='')
+    include blocks/footer
+  script(src="scripts/work.js")

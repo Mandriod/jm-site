@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="styles/projects.css")
+    title Jake Miller [Work]
+  body
+    .c-page--load
+        h3.js-loader-logo(data-value="PROJECT")
+    include blocks/nav
+    section.c-project.o-grid.js-bgc--dk
+      .c-project__title
+            h2 Project Name
+      .js-img-blur.c-project__image--main(style="background: url('/assets/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
+          img(src="/assets/placeholder-3-square.jpg", alt="", loading="lazy")
+      .js-img-blur.c-project__image--second(style="background: url('/assets/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
+          img(src="/assets/placeholder-3-square.jpg", alt="", loading="lazy")
+      .js-img-blur.c-project__image--third(style="background: url('/assets/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
+          img(src="/assets/placeholder-3-square.jpg", alt="", loading="lazy")
+      .c-project__details
+        h6 Brand
+        p Name of brand 
+        h6 Project Description 
+        p Marketing landing page for SHOP•COM 
+        h6 Role 
+        p Design concept, UI/UX, animations, development, implementation
+      .c-project__description
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet.
+    section.c-showcase.o-grid.js-bgc--lt
+      .js-img-blur.c-showcase__image(style="background: url('/assets/placeholder-1920x1080-min.jpg') no-repeat; background-size: cover;")
+          img(src="/assets/placeholder-1920x1080-min.jpg", alt="", loading="lazy")
+    include blocks/footer
+  script(src="scripts/work.js")

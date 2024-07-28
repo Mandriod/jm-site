@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="styles/about.css")
+    title Jake Miller [About]
+  body
+    .c-page--load
+        h3.js-loader-logo(data-value="ABOUT")
+    include blocks/nav
+    section.c-intro.o-grid.js-bgc--dk
+      .js-img-blur.c-intro__image(style="background: url('/assets/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
+          img(src="/assets/placeholder-3-square.jpg", alt="", loading="lazy")
+      .c-intro__description
+        h2 A bit about myself
+        p During my junior and high school years, I excelled as a nationally ranked swimmer, competing alongside icons like Michael Phelps and Gary Hall Jr., and sharing team camaraderie with Olympians such as Lacy Nightmare and Ric Needling. This period instilled in me the values of goal-setting, perseverance, and relentless dedication to achieving excellence. Despite encountering an injury that diverted my future goals away from collegiate swimming and beyond, the lessons learned from my athletic endeavors continue to resonate profoundly.
+    section.c-about.o-grid.js-bgc--lt
+      .c-about__opener.js-parallax-about
+        h4 
+          i Ad astra 
+          br
+          | 
+          i per aspera 
+      .c-about__copy
+        p Moving into adulthood, I used those skills to redefine both my career and life path. In college, I transitioned from earning a Bachelor's in Design in Graphic Design to pursuing a Master's in Teaching Mathematics, seamlessly merging two of my passions. Ultimately, I found my niche in development, where I discovered a unique gratification in harmonizing creative instincts with logical problem-solving. This fusion culminated in the creation of captivating and aesthetically pleasing digital experiences.
+        p Today, I am fueled by the journey that has led me to blend my diverse interests into a fulfilling career. With a deep-rooted appreciation for the lessons learned from my athletic background and a fervent dedication to continual growth, I am committed to crafting innovative solutions that resonate with users and leave a lasting impact in the realm of web development.
+          br
+          br
+          | 
+          i To the stars through trials
+    include blocks/footer
+  script(src="scripts/work.js")
