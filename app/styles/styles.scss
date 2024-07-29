@@ -753,13 +753,13 @@ canvas {
     background-size: 110%;
     background-position: -200% center;
     gap: 2em;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     padding: 7vw 0;
 
     &__text {
+      grid-column: 2/span 2;
       grid-row: 1/span 2;
       margin: 0;
-      padding: 0 5vw 0 0;
     }
 
     &__body {
@@ -779,59 +779,49 @@ canvas {
       transition: all 2s;
     }
 
+    $row-position-1: 1;
+    $row-position-2: 3;
+    $row-position-3: 3;
+
     &__indicator--one {
       grid-column: 5/span 2;
-      grid-row: 1;
+      grid-row: $row-position-1;
     }
     &__img--one {
       grid-column: 5/span 2;
-      grid-row: 1/span 3;
+      grid-row: $row-position-1/span 3;
     }
     &__copy--one {
       grid-column: 4;
-      grid-row: 1;
+      grid-row: $row-position-1;
     }
     &__indicator--two {
       grid-column: 2/span 2;
-      grid-row: 3;
+      grid-row: $row-position-2;
     }
     &__img--two {
       grid-column: 2/span 2;
-      grid-row: 3/span 4;
+      grid-row: $row-position-2/span 3;
     }
     &__copy--two {
       grid-column: 4;
-      grid-row: 3;
+      grid-row: $row-position-2;
     }
-
     &__indicator--three{
       grid-column: 6;
-      grid-row: 4;
+      grid-row: $row-position-3;
     }
     &__img--three {
       grid-column: 6;
-      grid-row: 4/span 3;
+      grid-row: $row-position-3/span 3;
     }
     &__copy--three {
       grid-column: 4/span 2;
-      grid-row: 4;
-    }
-
-    &__indicator--four {
-      grid-column: 3/span 2;
-      grid-row: 6;
-    }
-    &__img--four {
-      grid-column: 3/span 2;
-      grid-row: 6/span 2;
-    }
-    &__copy--four {
-      grid-column: 5;
-      grid-row: 6;
+      grid-row: $row-position-3;
     }
     &__button {
       grid-column: 2/span 5;
-      grid-row: 6;
+      grid-row: 4;
       margin: 0;
       padding: 0;
       place-self: end center;
@@ -977,6 +967,85 @@ canvas {
       grid-column: 2/span 2;
       // grid-row: 2/span 6;
       place-self: center start;
+    }
+  }
+
+  .c-work {
+    background-size: 110%;
+    background-position: -200% center;
+    gap: 2em;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 7vw 0;
+
+    &__text {
+      grid-column: 2/span 2;
+      grid-row: 1/span 2;
+      margin: 0;
+    }
+
+    &__body {
+      display: grid;
+      grid-row: 2;
+      height: 100%;
+    }
+
+    &__copy--one, &__copy--three {
+      text-align: right;
+      transition: all 2s;
+      margin: 0;
+    }
+    &__copy--two, &__copy--four {
+      text-align: left;
+      margin: 0;
+      transition: all 2s;
+    }
+
+    $row-position-1: 1;
+    $row-position-2: 3;
+    $row-position-3: 3;
+
+    &__indicator--one {
+      grid-column: 5/span 2;
+      grid-row: $row-position-1;
+    }
+    &__img--one {
+      grid-column: 5/span 2;
+      grid-row: $row-position-1/span 3;
+    }
+    &__copy--one {
+      grid-column: 4;
+      grid-row: $row-position-1;
+    }
+    &__indicator--two {
+      grid-column: 2/span 2;
+      grid-row: $row-position-2;
+    }
+    &__img--two {
+      grid-column: 2/span 2;
+      grid-row: $row-position-2/span 3;
+    }
+    &__copy--two {
+      grid-column: 4;
+      grid-row: $row-position-2;
+    }
+    &__indicator--three{
+      grid-column: 6;
+      grid-row: $row-position-3;
+    }
+    &__img--three {
+      grid-column: 6;
+      grid-row: $row-position-3/span 3;
+    }
+    &__copy--three {
+      grid-column: 4/span 2;
+      grid-row: $row-position-3;
+    }
+    &__button {
+      grid-column: 2/span 5;
+      grid-row: 4;
+      margin: 0;
+      padding: 0;
+      place-self: end center;
     }
   }
   
