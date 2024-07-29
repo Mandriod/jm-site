@@ -938,7 +938,6 @@ nav h4, nav p, nav .disclaimer {
   overflow-y: hidden; }
 
 nav {
-  background: red;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -946,12 +945,13 @@ nav {
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
   height: 3.5em;
+  inset: auto 0 auto auto;
+  place-items: end;
   position: fixed;
-  width: 100dvw;
+  width: 4.5em;
   z-index: 777; }
 
 header {
-  background: blue;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -981,7 +981,7 @@ header {
       -ms-grid-row: 1;
       grid-row: 1;
       height: 100%;
-      width: 100%; }
+      margin: 0 auto; }
   header .o-icon {
     -ms-grid-column: 1;
     grid-column: 1;
@@ -1221,6 +1221,7 @@ header {
   header {
     width: 100dvw; }
     header .o-logo img {
+      margin: 0;
       place-self: start;
       width: initial; }
     header .o-icon img {

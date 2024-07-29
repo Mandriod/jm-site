@@ -56,27 +56,25 @@
 // nav element
 
 nav {
-  background: red;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  height: 3.5em; // 3.5em 
+  height: 3.5em;
+  inset: auto 0 auto auto;
+  place-items: end;
   position: fixed;
-  width: 100dvw; //4.5em
+  width: 4.5em;
   z-index: 777;
 }
 
 // header
 
 header {
-  background: blue;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr;
-  // height: 2em;
   inset: 1.5em auto auto auto;
   position: sticky;
-  // width: 100dvw;
   z-index: 776;
 
   .o-logo {
@@ -85,7 +83,6 @@ header {
     grid-template-columns: 1fr;
     grid-row: 1;
     grid-template-rows: 2em;
-    // height: 100%;
     padding: 0 1.5em;
     transition: translate .25s, opacity 1s;
 
@@ -93,7 +90,7 @@ header {
       grid-column: 1;
       grid-row: 1;
       height: 100%;
-      width: 100%;
+      margin: 0 auto;
     }
   }
 
@@ -363,6 +360,7 @@ header {
 
       .o-logo {
         img {
+          margin: 0;
           place-self: start;
           width: initial;
         }
