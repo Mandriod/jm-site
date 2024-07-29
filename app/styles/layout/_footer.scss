@@ -2,7 +2,7 @@
 @import '../helpers/variables';
 @import '../base/typography';
 
-footer {
+.c-footer {
   background: $color-neu-500;
   grid-template-rows: 1fr 1fr 1fr 1fr .5fr;
   height: 100dvh;
@@ -70,7 +70,7 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-    footer {
+    .c-footer {
       h2 {
         font-size: 10dvw;
       }
@@ -94,7 +94,7 @@ footer {
   }
 
   @media screen and (orientation: landscape) {
-    footer {
+   .c-footer {
       h2 {
         font-size: 7dvw;
       }
@@ -112,9 +112,9 @@ footer {
         justify-content: space-between;
         margin: 0;
 
-        // ul, li, a {
-        //   flex-direction: row;
-        // }
+        ul, li, a {
+          flex-direction: row;
+        }
 
         ul, li {
           font-size: 1.1em;
