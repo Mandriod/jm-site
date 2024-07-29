@@ -769,9 +769,9 @@ canvas {
     }
 
     &__copy--one, &__copy--three {
+      margin: 0;
       text-align: right;
       transition: all 2s;
-      margin: 0;
     }
     &__copy--two, &__copy--four {
       text-align: left;
@@ -835,83 +835,11 @@ canvas {
 // desktop skills
 
   .c-skills {
-    grid-column-gap: 2em;
-    grid-row-gap: 1em;
-    grid-template-rows: auto auto .5fr repeat(4, 1fr) auto;
-    margin: 0 0 6vw 0;
-
-    &__design {
-      &--one {
-        grid-column: 2/span 3;
-        grid-row: 2;
-
-        img {
-          width: 100%;
-        }
-      }
-      &--title {
-        grid-column: 2/span 2;
-        grid-row: 1;
-      }
-      &--copy {
-        grid-column: 5/span 2;
-        grid-row: 2;
-
-        h6 {
-          grid-column: 1/span 2;
-        }
-
-        p {
-          grid-column: 1;
-          margin: 0;
-        }
-      }
-    }
 
     &__dev {
       &--one {
-        grid-column: 4/span 3;
-        grid-row: 4/span 3;
-      }
-      &--two {
-        grid-column: 3;
-        grid-row: 4/span 2;
-
-      }
-      &--title {
-        border-bottom: 1px solid $color-neu-200;
-        grid-column: 2/span 2;
-        grid-row: 6;
-        place-self: end start;
-        width: 100%;
-      }
-      &--copy {
-        grid-column: 2/span 5;
-        grid-row: 7/span 2;
-        grid-template-columns: 2fr 3fr 1fr 1fr 3fr;
-        grid-template-rows: auto;
-
-        h5 {
-          border: none;
-          grid-column: 1/span 2;
-          grid-row: 1;
-          padding: 0 0 3em 0;
-          margin: 0;
-        }
-        p {
-          grid-column: 5;
-          grid-row: 1;
-          place-self: end;
-        }
-      }
-    }
-
-    .c-dev-icons {
-      display: flex;
-      grid-row: 1;
-
-      .o-how-icon {
-        margin: 0 0 0 .5em;
+        display: grid;
+        align-items: end;
       }
     }
   }
@@ -955,54 +883,19 @@ canvas {
 }
 
 @media screen and (min-width: $desktop) {
-  // .o-title {
-  //   position: sticky;
-  // }
 
   .c-work {
-    column-gap: 2em;
-    // grid-template-rows: repeat(17, 1fr);
-  
-    &__text {
-      grid-column: 2/span 2;
-      // grid-row: 2/span 6;
-      place-self: center start;
-    }
-  }
-
-  .c-work {
-    background-size: 110%;
-    background-position: -200% center;
-    gap: 2em;
-    grid-template-rows: repeat(4, 1fr);
-    padding: 7vw 0;
+    grid-template-rows: repeat(6, 1fr);
 
     &__text {
       grid-column: 2/span 2;
       grid-row: 1/span 2;
-      margin: 0;
-    }
-
-    &__body {
-      display: grid;
-      grid-row: 2;
-      height: 100%;
-    }
-
-    &__copy--one, &__copy--three {
-      text-align: right;
-      transition: all 2s;
-      margin: 0;
-    }
-    &__copy--two, &__copy--four {
-      text-align: left;
-      margin: 0;
-      transition: all 2s;
+      place-self: center start;
     }
 
     $row-position-1: 1;
     $row-position-2: 3;
-    $row-position-3: 3;
+    $row-position-3: 4;
 
     &__indicator--one {
       grid-column: 5/span 2;
@@ -1022,12 +915,13 @@ canvas {
     }
     &__img--two {
       grid-column: 2/span 2;
-      grid-row: $row-position-2/span 3;
+      grid-row: $row-position-2/span 4;
     }
     &__copy--two {
       grid-column: 4;
       grid-row: $row-position-2;
     }
+
     &__indicator--three{
       grid-column: 6;
       grid-row: $row-position-3;
@@ -1040,41 +934,99 @@ canvas {
       grid-column: 4/span 2;
       grid-row: $row-position-3;
     }
+
     &__button {
       grid-column: 2/span 5;
-      grid-row: 4;
+      grid-row: 6;
       margin: 0;
       padding: 0;
       place-self: end center;
     }
   }
   
-// desktop work
+// desktop skills
 
-// .c-skills {
-//   grid-template-rows: auto repeat(5, 1fr) .05fr repeat(4, 1fr) .5fr;
+.c-skills {
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+  grid-template-rows: auto auto .25fr 1fr 1fr .25fr 1fr auto;
+  margin: 0 0 6vw 0;
 
-//   &__dev {
-//     &--one {
-//       grid-column: 4/span 3;
-//       grid-row: 8/span 3;
-//     }
-//     &--two {
-//       grid-column: 3;
-//       grid-row: 8/span 2;
+  &__design {
+    &--one {
+      grid-column: 2/span 3;
+      grid-row: 2;
 
-//     }
-//     &--title {
-//       grid-column: 2/span 2;
-//       grid-row: 10;
-//       place-self: end start;
-//     }
-//     &--copy {
-//       grid-column: 2/span 2;
-//       grid-row: 11/span 2;
-//     }
-//   }
-// }
+      img {
+        width: 100%;
+      }
+    }
+    &--title {
+      grid-column: 2/span 2;
+      grid-row: 1;
+    }
+    &--copy {
+      grid-column: 5/span 2;
+      grid-row: 2;
+
+      h6 {
+        grid-column: 1/span 2;
+      }
+
+      p {
+        grid-column: 1;
+        margin: 0;
+      }
+    }
+  }
+
+  &__dev {
+    &--one {
+      grid-column: 4/span 3;
+      grid-row: 4/span 2;
+    }
+    &--two {
+      grid-column: 3;
+      grid-row: 4/span 2;
+
+    }
+    &--title {
+      border-bottom: 1px solid $color-neu-200;
+      grid-column: 2/span 2;
+      grid-row: 6;
+      place-self: end start;
+      width: 100%;
+    }
+    &--copy {
+      grid-column: 2/span 5;
+      grid-row: 7/span 2;
+      grid-template-columns: 2fr 3fr 1fr 1fr 3fr;
+      grid-template-rows: auto;
+
+      h5 {
+        border: none;
+        grid-column: 1/span 2;
+        grid-row: 1;
+        padding: 0 0 3em 0;
+        margin: 0;
+      }
+      p {
+        grid-column: 5;
+        grid-row: 1;
+        place-self: end;
+      }
+    }
+  }
+
+  .c-dev-icons {
+    display: flex;
+    grid-row: 1;
+
+    .o-how-icon {
+      margin: 0 0 0 .5em;
+    }
+  }
+}
 
 // desktop about
   
