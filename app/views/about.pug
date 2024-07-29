@@ -10,8 +10,8 @@ html(lang="en")
         h3.js-loader-logo(data-value="ABOUT")
     include blocks/nav
     section.c-intro.o-grid.js-bgc--dk
-      .js-img-blur.c-intro__image(style="background: url('/assets/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
-          img(src="/assets/placeholder-3-square.jpg", alt="", loading="lazy")
+      .js-img-blur.c-intro__image(style="background: url('images/placeholder-3-sm-2.jpg') no-repeat; background-size: cover;")
+          img(src="images/placeholder-3-square.jpg", alt="", loading="lazy")
       .c-intro__description
         h2 A bit about myself
         p During my junior and high school years, I excelled as a nationally ranked swimmer, competing alongside icons like Michael Phelps and Gary Hall Jr., and sharing team camaraderie with Olympians such as Lacy Nightmare and Ric Needling. This period instilled in me the values of goal-setting, perseverance, and relentless dedication to achieving excellence. Despite encountering an injury that diverted my future goals away from collegiate swimming and beyond, the lessons learned from my athletic endeavors continue to resonate profoundly.
@@ -29,5 +29,6 @@ html(lang="en")
           br
           | 
           i To the stars through trials
-    include blocks/footer
+    footer 
+      include blocks/footer
   script(src="scripts/work.js")
