@@ -123,8 +123,8 @@ nav h4, nav p, nav .disclaimer {
 
 footer {
   background: #3B3B3B;
-  -ms-grid-rows: (1fr)[4] 0.5fr;
-  grid-template-rows: repeat(4, 1fr) 0.5fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr .5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr .5fr;
   height: 100dvh; }
   footer h2, footer li, footer p {
     color: #EDE9E4; }
@@ -182,15 +182,15 @@ footer {
       white-space: nowrap; }
 
 @media screen and (min-width: 768px) {
-  -footer h2 {
+  footer h2 {
     font-size: 10dvw; }
-  -footer__talk {
+  footer__talk {
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-column: 2/span 5;
     -ms-grid-row: 2;
     grid-row: 2; }
-  -footer__links {
+  footer__links {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2/span 2;
@@ -198,20 +198,20 @@ footer {
     -ms-grid-row-span: 2;
     grid-row: 3/span 2;
     gap: 6dvw; }
-    -footer__links img {
+    footer__links img {
       width: 5dvw;
       margin: 0 0 1em 0; } }
 
 @media screen and (orientation: landscape) {
-  -footer h2 {
+  footer h2 {
     font-size: 7dvw; }
-  -footer__talk {
+  footer__talk {
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-column: 2/span 5;
     -ms-grid-row: 2;
     grid-row: 2; }
-  -footer__links {
+  footer__links {
     -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-column: 5/span 2;
@@ -222,14 +222,14 @@ footer {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0; }
-    -footer__links ul, -footer__links li {
+    footer__links ul, footer__links li {
       font-size: 1.1em;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row;
       margin: 0 1em 0 0; }
-    -footer__links img {
+    footer__links img {
       width: 2em; } }
 
 .o-grid {

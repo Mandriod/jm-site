@@ -1,11 +1,11 @@
 @import 'base/colors';
-@import 'layout/footer';
 @import 'helpers/variables';
 @import 'base/grid';
 @import 'components/ui';
-@import 'layout/nav';
 @import 'reset';
 @import 'base/typography';
+@import 'layout/nav';
+@import 'layout/footer';
 
 html {
   scroll-behavior: smooth;
