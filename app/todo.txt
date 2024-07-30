@@ -1,0 +1,19 @@
+UI 
+- work on buttons (hover treatment)
+- check on hamburger toggle
+
+Home
+
+
+Work
+- (hero) hover on Projects and Experiments to change iamge
+- (Projects) hover over images
+- (Experiments) hover over images
+
+
+About
+- fix header
+- add image
+
+Contact
+- check on following circle not showing up.
