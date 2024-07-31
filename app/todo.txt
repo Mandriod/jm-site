@@ -6,9 +6,9 @@ Home
 
 
 Work
-- (hero) hover on Projects and Experiments to change iamge
-- (Projects) hover over images
-- (Experiments) hover over images
+√ (hero) hover on Projects and Experiments to change iamge
+√ (Projects) hover over images
+√ (Experiments) hover over images
 
 
 About
