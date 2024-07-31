@@ -1515,7 +1515,7 @@ section {
       padding: 1em 0 0 0; }
 
 .c-projects {
-  grid-row: repeat(9, auto);
+  grid-template-rows: repeat(9, auto);
   row-gap: 1em;
   padding: 2em 0; }
   .c-projects h2 {
@@ -1642,7 +1642,7 @@ section {
       grid-row: 10/span 2;
       place-self: end start; }
   .c-projects {
-    grid-row: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
     padding: 4em 0 4em 0;
     row-gap: 2em; }
     .c-projects .c-work__text--header {
@@ -1696,7 +1696,8 @@ section {
     -webkit-column-gap: 2em;
     -moz-column-gap: 2em;
     column-gap: 2em;
-    grid-row: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    min-height: auto;
     padding: 4em 0 8em 0;
     row-gap: 2em; }
     .c-labs h2 {
@@ -1706,11 +1707,9 @@ section {
       line-height: 1; }
     .c-labs .o-lab {
       display: grid;
-      -webkit-column-gap: 2em;
-      -moz-column-gap: 2em;
-      column-gap: 2em;
+      gap: 2em;
       grid-template-columns: 2fr 3fr 1fr 1fr 3fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: 2fr 1fr;
       margin: 0; }
       .c-labs .o-lab h3, .c-labs .o-lab p {
         color: #EDE9E4; }
@@ -1733,7 +1732,10 @@ section {
         grid-row: 1; }
       .c-labs .o-lab:nth-child(3n-1) .o-lab__copy {
         grid-column: 1/span 5;
-        grid-row: 2; }
+        grid-row: 2;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content; }
     .c-labs .o-lab:nth-child(3n) {
       grid-column: 3/span 2;
       grid-row: 2; }
